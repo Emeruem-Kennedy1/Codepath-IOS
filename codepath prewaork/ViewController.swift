@@ -12,14 +12,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        textString.text = "Hello from Kennedy"
         //set up the gesture recognizer
         let TapGesture = UITapGestureRecognizer()
         self.view.addGestureRecognizer(TapGesture)
         TapGesture.addTarget(self, action: #selector(tapclick))
     }
    
-    var defaultText : String = "Swift is interesting"
+    var defaultText : String = "Hello from Kennedy"
     
     @IBOutlet weak var textString: UILabel!
     @IBOutlet weak var textFeild: UITextField!
